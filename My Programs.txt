@@ -1,0 +1,454 @@
+1.Alphabet or Digit or Special Character
+
+import java.util.Scanner;
+class AlphabetOrDigitOrSplChar{
+    public static void main(String args[]){
+        char c;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a character");
+        c=sc.next().charAt(0);
+        
+        if((c>='a' && c<='z')||(c>='A' && c<='Z')){
+            System.out.println("It is a Alphabet");
+        }
+        else if(c>='0' && c<='9'){
+            System.out.println("It is a Digit");
+        }else{
+            System.out.println("It is a Special Character");
+        }
+    }
+}
+
+2.Alphabet or Digit
+import java.util.Scanner;
+class AlphabetOrNot{
+    public static void main(String args[]){
+        char c;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a character");
+        c=sc.next().charAt(0);
+        
+        if((c>='a' && c<='z')||(c>='A' && c<='Z')){
+            System.out.println("It is Alphabet");
+        }
+        else{
+            System.out.println("not alphabet");
+        }
+    }
+}
+
+3.Blood Donation 
+import java.util.Scanner;
+class BloodDonate
+{
+    public static void main(String args[])
+    {
+        int age,weight;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your Age");
+        age = sc.nextInt();
+        System.out.println("Enter Your weight");
+        weight = sc.nextInt();
+        if((age>=18)&&(weight>=50)){
+            System.out.println("You can Donate the blood");
+        }else{
+    System.out.println("sry...you cannot donate the blood");
+            
+        }
+        
+    }
+}
+
+4.number divisible or not
+import java.util.Scanner;
+class DivisibleOrNot
+{
+    public static void main(String args[])
+    {
+        int number;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Number");
+        number = sc.nextInt();
+        
+        if(number%2==0){
+            System.out.println("Divisible");
+        }else{
+        System.out.println("Not Divisible");
+        }
+    }
+}
+
+5.even or odd
+import java.util.Scanner;
+class EvenOrOdd
+{
+    public static void main(String args[])
+    {
+        int number;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number");
+        number = sc.nextInt();
+        
+        if(number%2==0){
+            System.out.println("Even number");
+        }else if(number%2==1){
+        System.out.println("Odd number");
+        }
+    }
+}
+
+6.Leap year or not
+import java.util.Scanner;
+class EvenOrOdd
+{
+    public static void main(String args[])
+    {
+        int number;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number");
+        number = sc.nextInt();
+        
+        if(number%2==0){
+            System.out.println("Even number");
+        }else if(number%2==1){
+        System.out.println("Odd number");
+        }
+    }
+}
+
+7.Maximum of two numbers
+import java.util.Scanner;
+class MaximumOfTwoNumbers{
+    public static void main(String args[]){
+        int num1,num2;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number1");
+        num1=sc.nextInt();
+        System.out.println("Enter Number2");
+        num2=sc.nextInt();
+        
+        if(num1>num2)
+        {
+            System.out.println("Number1 is Maximum");
+        }else{
+            System.out.println("Number2 is Maximum");
+        }
+    }
+}
+
+8.Maximum of three numbers
+import java.util.Scanner;
+class MaxOfThreeNumbers{
+    public static void main(String args[]){
+        int num1,num2,num3;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number1");
+        num1=sc.nextInt();
+        System.out.println("Enter Number2");
+        num2=sc.nextInt();
+        System.out.println("Enter Number3");
+        num3=sc.nextInt();
+        
+        if(num1>num2 && num1>num3)
+        {
+            System.out.println("Number1 is Maximum");
+        }else if(num2>num1 && num2>num3){
+            System.out.println("Number2 is Maximum");
+        }else{
+            System.out.println("Number3 is Maximum");
+        }
+    }
+}
+
+9.Negative or Positive or Zero
+import java.util.Scanner;
+class NegPosZero{
+    public static void main(String args[]){
+        int num;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number");
+        num=sc.nextInt();
+        if(num>0)
+        {
+            System.out.println("Number is Positive");
+        }else if(num<0){
+            System.out.println("Number is Negative");
+        }else{
+            System.out.println("Number is Zero");
+        }
+    }
+}
+
+10.Number divisible by 5 and 11 or not
+import java.util.Scanner;
+class NumDiviBy{
+    public static void main(String args[]){
+        int num;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number");
+        num=sc.nextInt();
+        if(num%5==0 && num%11==0)
+        {
+            System.out.println("Number is Divisible");
+        }else{
+            System.out.println("Number is Not Divisible");
+        }
+    }
+}
+
+11.number Divisible or not
+import java.util.Scanner;
+class NumDiviBy{
+    public static void main(String args[]){
+        int num;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number");
+        num=sc.nextInt();
+        if(num%5==0 && num%11==0)
+        {
+            System.out.println("Number is Divisible");
+        }else{
+            System.out.println("Number is Not Divisible");
+        }
+    }
+}
+
+12.student percentage and marks
+import java.util.Scanner;
+class PerOfStudentMarks{
+    public static void main(String args[]){
+        
+        float percentage,result,maxmarks,total;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Mathematics Marks:");
+        int mathematics= sc.nextInt();
+        
+        System.out.println("Enter Physics Marks:");
+        int physics= sc.nextInt();
+        
+        System.out.println("Enter Chemistry Marks:");
+        int chemistry= sc.nextInt();
+        
+        System.out.println("Enter Biology Marks:");
+        int biology= sc.nextInt();
+        
+        System.out.println("Enter Computer Marks:");
+        int computer= sc.nextInt();
+        
+        total=mathematics+physics+chemistry+biology+computer;
+        System.out.println("Your total marks:"+total);
+        
+        System.out.println("Enter Maximum Marks:");
+        maxmarks= sc.nextInt();
+        
+        result=total/maxmarks;
+        
+        percentage = result*100;
+        System.out.println("Your percentage is:"+percentage);
+        
+        if(percentage>=90){
+            System.out.println("GRADE A");
+        }else if(percentage>=80){
+            System.out.println("GRADE B");
+        }else if(percentage>=70){
+            System.out.println("GRADE C");
+        }else if(percentage>=60){
+            System.out.println("GRADE D");
+        }else if(percentage>=40){
+            System.out.println("GRADE E");
+        }else if(percentage<40){
+            System.out.println("GRADE F");
+        }
+    }
+}
+
+13.Upper or Lower 
+
+import java.util.Scanner;
+class UpperOrLower{
+    public static void main(String args[]){
+        char c;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a character");
+        c=sc.next().charAt(0);
+        
+        if((c>='a' && c<='z')){
+            System.out.println("lowercase");
+        }
+        else if(c>='A' && c<='Z'){
+            System.out.println("Uppercase");
+        }else{
+            System.out.println("Digit");
+        }
+    }
+}
+
+14.vowel or consonant
+import java.util.Scanner;
+class VowelOrConsonant{
+    public static void main(String args[]){
+        char i;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a character");
+        i=sc.next().charAt(0);
+        
+        if((i=='a')||(i=='e')||(i=='i')||(i=='o')||(i=='u')){
+            System.out.println("It is Vowel");
+        }
+        else{
+            System.out.println("It is Consonant");
+        }
+    }
+}
+
+15.weekday in week
+import java.util.Scanner;
+class WeekDayAndWeekNumber{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter weekday number : ");
+        int weekday = scanner.nextInt();
+
+        if(weekday == 1) {
+
+            System.out.println("Monday");
+
+        } else if(weekday == 2) {
+
+            System.out.println("Tuesday");
+
+        } else if(weekday == 3) {
+
+            System.out.println("Wednesday");
+
+        } else if(weekday == 4) {
+
+            System.out.println("Thursday");
+
+        } else if(weekday == 5) {
+
+            System.out.println("Friday");
+
+        } else if(weekday == 6) {
+
+            System.out.println("Saturday");
+
+        } else if(weekday == 7) {
+
+            System.out.println("Sunday");
+
+        } else {
+
+            System.out.println("Please enter Correct weekday number");
+        }
+    }
+}
+
+16.print a to z aplhabets using loop
+class aTozAlphabets{
+  public static void main(String[] args) {
+
+    char c='a';
+
+    while(c <= 'z'){
+      System.out.print(c + " ");
+      c++;
+    }
+      
+  }
+    
+}
+
+17.1 to 100 even numbers
+import java.util.Scanner;  
+public class evenNumbers  
+{  
+public static void main(String[] args)   
+{  
+int n,i=2;  
+Scanner sc=new Scanner(System.in);  
+System.out.print("Enter the limit: ");  
+n = sc.nextInt();    
+System.out.print("Lit of even numbers: ");  
+while(i<=n)  
+{  
+System.out.print(i +" ");   
+i=i+2;  
+}     
+}  
+}  
+
+18.1 to 100 odd numbers using loop
+class oddNumbers
+{
+public static void main(String args[]){
+		System.out.println("The Odd Numbers are:");
+		for (int i = 1; i <= 100; i++) {
+			if (i % 2 != 0) {
+				System.out.print(i + " ");
+			}
+		}
+	}
+}
+
+19.Sum of n Natural numbers
+import java.util.Scanner;
+public class sumOfNaturanNumbers{
+
+    public static void main(String[] args) {
+
+        int num, sum = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        num=sc.nextInt();
+
+        for(int i = 1; i <= num; ++i)
+        {
+            sum = sum+i;
+        }
+
+        System.out.println("Sum = " + sum);
+    }
+}
+
+20.Sum of all even numbers
+import java.util.Scanner;
+public class sumOfAllEvenNumbers{
+
+    public static void main(String[] args) {
+
+        int num, sum = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        num=sc.nextInt();
+
+        for(int i = 1; i <= num; i=i+2)
+        {
+            sum = sum+i;
+        }
+
+        System.out.println("Sum = " + sum);
+    }
+}
+
+21.Sum of all odd numbers
+class sumOfAllOddNumbers
+{
+    public static void main(String args[])
+    {
+        int sum=0;
+        System.out.println("The Odd Numbers are:");
+        
+        for (int i = 1; i <= n; i++) 
+        {
+            if (i % 2 != 0) 
+        {
+            sum = sum+i;
+            System.out.println("sum of odd numbers"+sum);
+        }
+            
+        }
+    }
+}
+
